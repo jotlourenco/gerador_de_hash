@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Hash</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Gerador de Hash</h1>
+
+    <div class="form-group">
+      <label for="inputText">Texto de Entrada</label>
+      <textarea id="inputText" placeholder="Digite ou cole seu texto aqui..."></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="algorithm">Algoritmo</label>
+      <select id="algorithm">
+        <option value="SHA-256">SHA-256</option>
+        <option value="SHA-1">SHA-1</option>
+        <option value="SHA-384">SHA-384</option>
+        <option value="SHA-512">SHA-512</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="hashOutput">Resultado (Hash)</label>
+      <div class="output-group">
+        <input type="text" id="hashOutput" readonly placeholder="O hash aparecerá aqui...">
+        <button class="btn-copy" id="btnCopy">Copiar</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
